@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EduCursos - Wishlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap">
+                </i> EduCursos
+            </a>
+            <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home">
+                            </i>
+                            Catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inscripciones.html">
+                            <i class="fas fa-user-plus">
+                            </i>
+                            Inscripciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mis_cursos.html">
+                            <i class="fas fa-list">
+                            </i>
+                            Mis Cursos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fas fa-envelope">
+                            </i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-warning wishlist-btn d-flex align-items-center" href="wishlist.html" style="gap: 5px;">
+                        <div class="position-relative me-3">
+                            <i class="fas fa-heart text-warning"></i>
+                            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle" id="wishlist-count" style="display: none;">0</span>
+                        </div>
+                        <span class="text-white medium">Wishlist</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Mi Wishlist</h1>
+            <p class="lead mb-4">Aquí puedes ver los cursos que has agregado a tu lista de deseos.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row" id="wishlist-container">
+            <div class="col-12 text-center">
+                <p>Cargando wishlist...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container text-center text-muted">
+            © 2025 EduCursos. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+</html>

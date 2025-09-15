@@ -1,0 +1,715 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   EduCursos - Contacto
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!DOCTYPE html>
+  <html lang="es">
+   <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+     Contacto - EduCursos
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+   </head>
+   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap">
+                </i> EduCursos
+            </a>
+            <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home">
+                            </i>
+                            Catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inscripciones.html">
+                            <i class="fas fa-user-plus">
+                            </i>
+                            Inscripciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mis_cursos.html">
+                            <i class="fas fa-list">
+                            </i>
+                            Mis Cursos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">
+                            <i class="fas fa-envelope">
+                            </i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-warning wishlist-btn d-flex align-items-center" href="wishlist.html" style="gap: 5px;">
+                        <div class="position-relative me-3">
+                            <i class="fas fa-heart text-warning"></i>
+                            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle" id="wishlist-count" style="display: none;">0</span>
+                        </div>
+                        <span class="text-white medium">Wishlist</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+     <div class="container text-center">
+      <h1 class="display-5 fw-bold mb-3">
+       Contáctanos
+      </h1>
+      <p class="lead mb-4">
+       ¿Tienes preguntas? Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos pronto.
+      </p>
+     </div>
+    </section>
+    <div class="container">
+     <div class="row mb-5">
+      <div class="col-lg-4 mb-4">
+       <div class="card h-100 text-center">
+        <div class="card-body">
+         <div class="contact-icon">
+          <i class="fas fa-envelope fa-2x text-primary mb-3">
+          </i>
+         </div>
+         <h5>
+          Email
+         </h5>
+         <p class="text-muted">
+          info@educursos.com
+         </p>
+         <p class="text-muted">
+          soporte@educursos.com
+         </p>
+         <small class="text-muted">
+          Respuesta en 24 horas
+         </small>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card h-100 text-center">
+        <div class="card-body">
+         <div class="contact-icon">
+          <i class="fas fa-phone fa-2x text-success mb-3">
+          </i>
+         </div>
+         <h5>
+          Teléfono
+         </h5>
+         <p class="text-muted">
+          (555) 123-4567
+         </p>
+         <p class="text-muted">
+          (555) 987-6543
+         </p>
+         <small class="text-muted">
+          Lun - Vie: 9:00 AM - 6:00 PM
+         </small>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card h-100 text-center">
+        <div class="card-body">
+         <div class="contact-icon">
+          <i class="fas fa-map-marker-alt fa-2x text-warning mb-3">
+          </i>
+         </div>
+         <h5>
+          Oficina
+         </h5>
+         <p class="text-muted">
+          Calle Principal 123
+         </p>
+         <p class="text-muted">
+          Ciudad, País 12345
+         </p>
+         <small class="text-muted">
+          Visitas con cita previa
+         </small>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row justify-content-center">
+      <div class="col-lg-8">
+       <div class="card">
+        <div class="card-header">
+         <h5 class="mb-0">
+          <i class="fas fa-paper-plane">
+          </i>
+          Envíanos un Mensaje
+         </h5>
+        </div>
+        <div class="card-body">
+         <form id="contacto-form" novalidate="">
+          <div class="row">
+           <div class="col-md-6 mb-3">
+            <label class="form-label" for="nombre">
+             Nombre Completo *
+            </label>
+            <input class="form-control" id="nombre" name="nombre" required="" type="text"/>
+            <div class="invalid-feedback">
+             Por favor, ingresa tu nombre completo.
+            </div>
+            <div class="valid-feedback">
+             ¡Perfecto!
+            </div>
+           </div>
+           <div class="col-md-6 mb-3">
+            <label class="form-label" for="email">
+             Correo Electrónico *
+            </label>
+            <input class="form-control" id="email" name="email" required="" type="email"/>
+            <div class="invalid-feedback">
+             Por favor, ingresa un email válido.
+            </div>
+            <div class="valid-feedback">
+             ¡Email válido!
+            </div>
+           </div>
+          </div>
+          <div class="row">
+           <div class="col-md-6 mb-3">
+            <label class="form-label" for="telefono">
+             Teléfono
+            </label>
+            <input class="form-control" id="telefono" name="telefono" placeholder="(555) 123-4567" type="tel"/>
+            <div class="form-text">
+             Opcional - Para contactarte más rápido
+            </div>
+           </div>
+           <div class="col-md-6 mb-3">
+            <label class="form-label" for="asunto">
+             Asunto *
+            </label>
+            <select class="form-select" id="asunto" name="asunto" required="">
+             <option value="">
+              Selecciona un asunto
+             </option>
+             <option value="informacion-cursos">
+              Información sobre cursos
+             </option>
+             <option value="soporte-tecnico">
+              Soporte técnico
+             </option>
+             <option value="problemas-inscripcion">
+              Problemas con inscripción
+             </option>
+             <option value="certificaciones">
+              Certificaciones
+             </option>
+             <option value="pagos-facturacion">
+              Pagos y facturación
+             </option>
+             <option value="sugerencias">
+              Sugerencias
+             </option>
+             <option value="colaboracion">
+              Colaboración/Partnership
+             </option>
+             <option value="otro">
+              Otro
+             </option>
+            </select>
+            <div class="invalid-feedback">
+             Por favor, selecciona un asunto.
+            </div>
+            <div class="valid-feedback">
+             ¡Asunto seleccionado!
+            </div>
+           </div>
+          </div>
+          <div class="mb-3">
+           <label class="form-label">
+            Prioridad
+           </label>
+           <div class="d-flex flex-wrap">
+            <div class="form-check me-3">
+             <input checked="" class="form-check-input" id="prioridad-baja" name="prioridad" type="radio" value="baja"/>
+             <label class="form-check-label" for="prioridad-baja">
+              <i class="fas fa-circle text-success">
+              </i>
+              Baja
+             </label>
+            </div>
+            <div class="form-check me-3">
+             <input class="form-check-input" id="prioridad-media" name="prioridad" type="radio" value="media"/>
+             <label class="form-check-label" for="prioridad-media">
+              <i class="fas fa-circle text-warning">
+              </i>
+              Media
+             </label>
+            </div>
+            <div class="form-check">
+             <input class="form-check-input" id="prioridad-alta" name="prioridad" type="radio" value="alta"/>
+             <label class="form-check-label" for="prioridad-alta">
+              <i class="fas fa-circle text-danger">
+              </i>
+              Alta
+             </label>
+            </div>
+           </div>
+           <div class="form-text">
+            Selecciona la prioridad de tu consulta
+           </div>
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="mensaje">
+            Mensaje *
+           </label>
+           <textarea class="form-control" id="mensaje" maxlength="1000" name="mensaje" placeholder="Describe tu consulta o mensaje de forma detallada. Incluye toda la información relevante para que podamos ayudarte mejor..." required="" rows="6"></textarea>
+           <div class="d-flex justify-content-between">
+            <div class="invalid-feedback">
+             Por favor, escribe tu mensaje (mínimo 10 caracteres).
+            </div>
+            <div class="valid-feedback">
+             ¡Mensaje válido!
+            </div>
+            <div class="form-text">
+             <span id="mensaje-count">
+              0
+             </span>
+             /1000 caracteres
+            </div>
+           </div>
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="archivo">
+            Archivo Adjunto
+           </label>
+           <input accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" class="form-control" id="archivo" name="archivo" type="file"/>
+           <div class="form-text">
+            Opcional - Formatos permitidos: PDF, DOC, DOCX, TXT, JPG, PNG (máx. 5MB)
+           </div>
+          </div>
+          <div class="mb-3">
+           <label class="form-label">
+            ¿Cómo prefieres que te contactemos?
+           </label>
+           <div class="d-flex flex-wrap">
+            <div class="form-check me-3">
+             <input checked="" class="form-check-input" id="contacto-email" name="contacto-email" type="checkbox"/>
+             <label class="form-check-label" for="contacto-email">
+              <i class="fas fa-envelope">
+              </i>
+              Email
+             </label>
+            </div>
+            <div class="form-check me-3">
+             <input class="form-check-input" id="contacto-telefono" name="contacto-telefono" type="checkbox"/>
+             <label class="form-check-label" for="contacto-telefono">
+              <i class="fas fa-phone">
+              </i>
+              Teléfono
+             </label>
+            </div>
+            <div class="form-check">
+             <input class="form-check-input" id="contacto-whatsapp" name="contacto-whatsapp" type="checkbox"/>
+             <label class="form-check-label" for="contacto-whatsapp">
+              <i class="fab fa-whatsapp">
+              </i>
+              WhatsApp
+             </label>
+            </div>
+           </div>
+          </div>
+          <div class="mb-4">
+           <div class="form-check">
+            <input class="form-check-input" id="newsletter" name="newsletter" type="checkbox"/>
+            <label class="form-check-label" for="newsletter">
+             Quiero recibir información sobre nuevos cursos y promociones
+            </label>
+           </div>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+           <button class="btn btn-outline-secondary me-md-2" onclick="limpiarFormulario()" type="button">
+            <i class="fas fa-eraser">
+            </i>
+            Limpiar
+           </button>
+           <button class="btn btn-primary btn-lg" type="submit">
+            <i class="fas fa-paper-plane">
+            </i>
+            Enviar Mensaje
+           </button>
+          </div>
+         </form>
+        </div>
+       </div>
+       <div class="row mt-4">
+        <div class="col-md-6">
+         <div class="card">
+          <div class="card-body text-center">
+           <i class="fas fa-clock fa-2x text-info mb-3">
+           </i>
+           <h6>
+            Tiempo de Respuesta
+           </h6>
+           <p class="small text-muted mb-0">
+            Consultas generales: 24-48 horas
+           </p>
+           <p class="small text-muted mb-0">
+            Soporte técnico: 2-6 horas
+           </p>
+           <p class="small text-muted">
+            Urgencias: 1-2 horas
+           </p>
+          </div>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <div class="card">
+          <div class="card-body text-center">
+           <i class="fas fa-comments fa-2x text-success mb-3">
+           </i>
+           <h6>
+            Chat en Vivo
+           </h6>
+           <p class="small text-muted mb-2">
+            ¿Necesitas ayuda inmediata?
+           </p>
+           <button class="btn btn-success btn-sm" onclick="abrirChat()">
+            <i class="fas fa-comment">
+            </i>
+            Iniciar Chat
+           </button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row mt-5">
+      <div class="col-12">
+       <h3 class="text-center mb-4">
+        Preguntas Frecuentes
+       </h3>
+       <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+         <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">
+           ¿Cómo puedo inscribirme a un curso?
+          </button>
+         </h2>
+         <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq1">
+          <div class="accordion-body">
+           Para inscribirte, primero agrega el curso a tu wishlist desde el catálogo, 
+                                luego ve a la sección "Inscripciones" y completa el formulario.
+          </div>
+         </div>
+        </div>
+        <div class="accordion-item">
+         <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">
+           ¿Puedo cancelar mi inscripción?
+          </button>
+         </h2>
+         <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2">
+          <div class="accordion-body">
+           Sí, puedes cancelar tu inscripción desde la sección "Mis Cursos". 
+                                Las cancelaciones realizadas 48 horas antes del inicio tienen reembolso completo.
+          </div>
+         </div>
+        </div>
+        <div class="accordion-item">
+         <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">
+           ¿Cómo obtengo mi certificado?
+          </button>
+         </h2>
+         <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3">
+          <div class="accordion-body">
+           Los certificados se generan automáticamente al completar el 80% del curso. 
+                                Puedes descargarlo desde tu perfil en formato PDF.
+          </div>
+         </div>
+        </div>
+        <div class="accordion-item">
+         <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">
+           ¿Ofrecen descuentos para estudiantes?
+          </button>
+         </h2>
+         <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq4">
+          <div class="accordion-body">
+           Sí, ofrecemos descuentos del 20% para estudiantes universitarios. 
+                                Contáctanos con tu credencial estudiantil para aplicar el descuento.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="modal fade" id="exitoModal" tabindex="-1">
+     <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">
+         <i class="fas fa-check-circle">
+         </i>
+         ¡Mensaje Enviado!
+        </h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+        </button>
+       </div>
+       <div class="modal-body">
+        <div class="text-center mb-3">
+         <i class="fas fa-paper-plane fa-3x text-success">
+         </i>
+        </div>
+        <div id="detalles-envio">
+        </div>
+        <div class="alert alert-info mt-3">
+         <i class="fas fa-info-circle">
+         </i>
+         <strong>
+          ¿Qué sigue?
+         </strong>
+         <ul class="mb-0 mt-2">
+          <li>
+           Recibirás una confirmación por email
+          </li>
+          <li>
+           Nuestro equipo revisará tu mensaje
+          </li>
+          <li>
+           Te responderemos según la prioridad indicada
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="modal-footer">
+        <button class="btn btn-success" data-bs-dismiss="modal" type="button">
+         <i class="fas fa-check">
+         </i>
+         Entendido
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="modal fade" data-bs-backdrop="static" id="loadingModal" tabindex="-1">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+       <div class="modal-body text-center py-4">
+        <div class="loading">
+         <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">
+           Enviando...
+          </span>
+         </div>
+         <p class="mt-2 mb-0">
+          Enviando mensaje...
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer class="footer mt-5">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-4">
+        <h5>
+         <i class="fas fa-graduation-cap">
+         </i>
+         EduCursos
+        </h5>
+        <p class="text-muted">
+         Tu plataforma de confianza para el aprendizaje continuo y el desarrollo profesional.
+        </p>
+        <div class="social-links">
+         <a class="text-white me-3" href="#">
+          <i class="fab fa-facebook">
+          </i>
+         </a>
+         <a class="text-white me-3" href="#">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+         <a class="text-white me-3" href="#">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a class="text-white" href="#">
+          <i class="fab fa-instagram">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="col-lg-2">
+        <h6>
+         Navegación
+        </h6>
+        <ul class="list-unstyled">
+         <li>
+          <a class="text-muted" href="index.html">
+           Catálogo
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="inscripciones.html">
+           Inscripciones
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="mis_cursos.html">
+           Mis Cursos
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="contacto.html">
+           Contacto
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col-lg-3">
+        <h6>
+         Categorías
+        </h6>
+        <ul class="list-unstyled">
+         <li>
+          <a class="text-muted" href="#">
+           Desarrollo Web
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="#">
+           Data Science
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="#">
+           UX/UI Design
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="#">
+           DevOps
+          </a>
+         </li>
+         <li>
+          <a class="text-muted" href="#">
+           Ciberseguridad
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col-lg-3">
+        <h6>
+         Contacto
+        </h6>
+        <ul class="list-unstyled text-muted">
+         <li>
+          <i class="fas fa-envelope">
+          </i>
+          info@educursos.com
+         </li>
+         <li>
+          <i class="fas fa-phone">
+          </i>
+          (222) 123-4567
+         </li>
+         <li>
+          <i class="fas fa-map-marker-alt">
+          </i>
+          Puebla, México
+         </li>
+        </ul>
+       </div>
+      </div>
+      <hr class="my-4"/>
+      <div class="row align-items-center">
+       <div class="col-md-6">
+        <p class="text-muted mb-0">
+         © 2025 EduCursos. Todos los derechos reservados.
+        </p>
+       </div>
+       <div class="col-md-6 text-md-end">
+        <a class="text-muted me-3" href="#">
+         Términos de Uso
+        </a>
+        <a class="text-muted me-3" href="#">
+         Política de Privacidad
+        </a>
+        <a class="text-muted" href="#">
+         Ayuda
+        </a>
+       </div>
+      </div>
+     </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/catalogo.js">
+    </script>
+    <script src="js/contacto.js">
+    </script>
+    <script>
+     function limpiarFormulario() {
+            if (confirm('¿Estás seguro de que quieres limpiar todos los campos?')) {
+                document.getElementById('contacto-form').reset();
+                const inputs = document.querySelectorAll('.form-control, .form-select');
+                inputs.forEach(input => {
+                    input.classList.remove('is-valid', 'is-invalid');
+                });
+                document.getElementById('mensaje-count').textContent = '0';
+            }
+        }
+        
+        function abrirChat() {
+            alert('El chat en vivo estará disponible próximamente. Por ahora, puedes enviarnos un mensaje usando el formulario.');
+        }
+        
+        document.getElementById('mensaje').addEventListener('input', function() {
+            const count = this.value.length;
+            document.getElementById('mensaje-count').textContent = count;
+            
+            if (count > 900) {
+                this.classList.add('border-warning');
+            } else {
+                this.classList.remove('border-warning');
+            }
+        });
+    </script>
+   </body>
+  </html>
+  <div id="form-contacto">
+  </div>
+  <div id="loading-contacto">
+  </div>
+  <div id="contador-caracteres">
+  </div>
+  <div id="nombre">
+  </div>
+  <div id="email">
+  </div>
+  <div id="mensaje">
+  </div>
+ </body>
+</html>
